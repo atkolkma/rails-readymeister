@@ -24,10 +24,12 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     begin
-      DatabaseCleaner.start
+      # uncomment to use database_cleaner gem
+      # DatabaseCleaner.start
       FactoryGirl.lint
     ensure
-      DatabaseCleaner.clean
+      # uncomment to use database_cleaner gem
+      # DatabaseCleaner.clean
     end
   end
 
